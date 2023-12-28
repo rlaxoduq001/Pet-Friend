@@ -10,3 +10,7 @@ a {
 ul {
   list-style-type: none;
 }
+
+body {
+  font-family: 'Poor Story', sans-serif;
+}

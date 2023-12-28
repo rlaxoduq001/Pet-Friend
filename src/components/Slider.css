@@ -1,0 +1,10 @@
+.swiper-container {
+  min-height: 0; /* 혹은 다른 값으로 조절해보세요 */
+}
+
+/* 스와이퍼 슬라이드의 이미지 크기 조절 */
+.swiper-slide img {
+  width: 100%; /* 이미지를 스와이퍼 슬라이드의 너비에 맞게 조절 */
+  height: auto; /* 가로 비율 유지 */
+  
+}
