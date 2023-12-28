@@ -1,0 +1,22 @@
+
+
+.container {
+  border: 1px solid red;
+}
+
+.container_info {
+  border: 1px solid black;
+  margin: 10px 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .container_info {
+    margin: 10px 80px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container_info {
+    margin: 10px 30px;
+  }
+}

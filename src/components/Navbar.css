@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poor+Story&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #263343;
+  padding: 8px 12px;
+}
+
+.navbar_logo {
+  font-size: 50px;
+  color: #d49466;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: 'Poor Story', sans-serif;
+}
+
+.navbar_menu {
+  display: flex;
+  padding-left: 0;
+  color: white;
+}
+
+.navbar_menu span {
+  padding: 8px 12px;
+}
+
+.navbar_menu span:hover {
+  background-color: #d49466;
+  border-radius: 4px;
+}
+
+.toggle {
+  display: none;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  right: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar_menu span {
+    width: 100%;
+    text-align: center;
+  }
+  .toggle {
+    display: block;
+  }
+
+  .active {
+    display: none;
+  }
+}
