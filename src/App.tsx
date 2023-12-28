@@ -1,16 +1,19 @@
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { Container } from './components/Container'
-import { MainList } from './components/MainList'
 import { Navbar } from './components/Navbar'
+import { MainPage } from './pages/MainPage'
+import { SearchPage } from './pages/SearchPage'
 
 function App() {
   return (
     <>
       <Navbar />
       <Container>
-        <MainList title="공고기한이 하루남은 친구들"/>
-        <MainList title="강아지 친구들"/>
-        <MainList title="고양이 친구들"/>
+        <Routes>
+          <Route path="/" element={<MainPage/>}/>
+          <Route path="/search" element={<SearchPage/>}/>
+        </Routes>
       </Container>
     </>
   )

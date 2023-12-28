@@ -7,9 +7,9 @@ interface ListTitle {
 
 export const MainList:React.FC<ListTitle> = ({title}) => {
   return (
-    <div>
+    <>
       <h1 style={{padding : '8px 0'}}>{title}</h1>
       <Slider/>
-    </div>
+    </>
   )
 }
